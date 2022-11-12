@@ -3,11 +3,11 @@ const { MessageType, MessageOptions, Mimetype } = require('@adiwajshing/baileys'
 const fs = require('fs');
 const axios = require('axios');
 const Config = require('../config');
-const ll ="type some words after command♂️"
-const Ln = "▷🤖Queen Angella Presents◁ "
-const code = "╔════◉ CAMANDS ◉════╗\n\n            ❖═List═❖\n*🔮.yasai       ❴text❵\n🔮.uddika    ❴text❵\n🔮.aah          ❴text❵\n🔮.sir            ❴text❵\n🔮.my3         ❴text❵\n🔮.fuck         ❴text❵\n🔮.hii             ❴text❵\n🔮.asai          ❴text❵\n🔮.hapoi       ❴text❵\n🔮.quby1    ❴text❵\n🔮.quby2    ❴text❵\n🔮.quby3    ❴text❵\n🔮.quby4    ❴text❵\n🔮.cat1    ❴text❵\n🔮.cat2    ❴text❵\n🔮.cat3    ❴text❵\n🔮.cat4    ❴text❵\n🔮.trollikka1    ❴text❵\n🔮.trollikka2    ❴text❵\n🔮.trollikka3    ❴text❵\n🔮.trollikka4    ❴text❵\n\n╚═══❖══▣══▣══❖═══╝\n\nQueen Angella*"
+const ll ="اكتب بعض الكلمات بعد الاوامر♂️"
+const Ln = "▷🤖تحت إشراف الامبراطور انوس◁ " 
+const code = "╔════◉ انوس◉════╗\n\n            ❖═List═❖\n*🔮.هو فعل     ❴text❵\n🔮.uddika    ❴text❵\n🔮.aah  اااه        ❴text❵\n🔮.سيدي المحترم          ❴text❵\n🔮.بلده3      ❴text❵\n🔮.اللعنة       ❴text❵\n🔮.hii   هذه          ❴text❵\n🔮.asai اساي         ❴text❵\n🔮.hapoi  التسليه     ❴text❵\n🔮. كويبي1  ❴text❵\n🔮. كويبي2   ❴text❵\n🔮.كويبي3   ❴text❵\n🔮.كويبي4  ❴text❵\n🔮. القطه1   ❴text❵\n🔮. القطه 2  ❴text❵\n🔮. القطه3  ❴text❵\n🔮. القطه 4   ❴text❵\n🔮.trollikka1   القزم 1❴text❵\n🔮.trollikka2  القزم 2 ❴text❵\n🔮.trollikka3  القزم 3  ❴text❵\n🔮.trollikka4  القزم 4  ❴text❵\n\n╚═══❖══▣══▣══❖═══╝\n\nQueen Angella*"
 
-if (Config.WORKTYPE == 'public') {
+if (Config.WORKTYPE == 'عام') {
 
  Asena.addCommand({pattern: 'mmpack', fromMe: false, desc: Ln,}, (async (message, match) => {
 
@@ -17,7 +17,7 @@ if (Config.WORKTYPE == 'public') {
 
   }));
 
-    Asena.addCommand({ pattern: 'my3 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+    Asena.addCommand({ pattern: 'بلده?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(ll);
 
@@ -27,7 +27,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
 
-Asena.addCommand({ pattern: 'fuck ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+Asena.addCommand({ pattern: 'اللعنه ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(ll);
 
@@ -37,7 +37,7 @@ Asena.addCommand({ pattern: 'fuck ?(.*)', fromMe: false, dontAddCommandList: tru
 
     }));
 
-Asena.addCommand({ pattern: 'hii ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+Asena.addCommand({ pattern: 'هذا ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(ll);
 
@@ -47,7 +47,7 @@ Asena.addCommand({ pattern: 'hii ?(.*)', fromMe: false, dontAddCommandList: true
 
     }));
 
-Asena.addCommand({ pattern: 'sir ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+Asena.addCommand({ pattern: 'سيدي المحترم ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(ll);
 
@@ -57,7 +57,7 @@ Asena.addCommand({ pattern: 'sir ?(.*)', fromMe: false, dontAddCommandList: true
 
     }));
 
-Asena.addCommand({ pattern: 'yasai ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+Asena.addCommand({ pattern: 'هو فعل ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(ll);
 
@@ -87,7 +87,7 @@ Asena.addCommand({ pattern: 'uddika ?(.*)', fromMe: false, dontAddCommandList: t
 
     }));
 
-Asena.addCommand({ pattern: 'aah ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+Asena.addCommand({ pattern: 'اااه?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(ll);
 
@@ -107,7 +107,7 @@ Asena.addCommand({ pattern: 'asai ?(.*)', fromMe: false, dontAddCommandList: tru
 
     }));
 
-   Asena.addCommand({ pattern: 'quby1 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+   Asena.addCommand({ pattern: 'كويبي1 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(ll);
 
@@ -118,7 +118,7 @@ Asena.addCommand({ pattern: 'asai ?(.*)', fromMe: false, dontAddCommandList: tru
 
     }));
    
-   Asena.addCommand({ pattern: 'quby2 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+   Asena.addCommand({ pattern: 'كويبي2 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(ll);
 
@@ -129,7 +129,7 @@ Asena.addCommand({ pattern: 'asai ?(.*)', fromMe: false, dontAddCommandList: tru
 
     }));
   
-   Asena.addCommand({ pattern: 'quby3 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+   Asena.addCommand({ pattern: 'كويبي3 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(ll);
 
@@ -140,7 +140,7 @@ Asena.addCommand({ pattern: 'asai ?(.*)', fromMe: false, dontAddCommandList: tru
 
     }));
    
-   Asena.addCommand({ pattern: 'quby4 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+   Asena.addCommand({ pattern: 'كويبي4 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(ll);
 
@@ -151,7 +151,7 @@ Asena.addCommand({ pattern: 'asai ?(.*)', fromMe: false, dontAddCommandList: tru
 
     }));
 
-   Asena.addCommand({ pattern: 'cat1 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+   Asena.addCommand({ pattern: 'اللقطة1 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(ll);
 
