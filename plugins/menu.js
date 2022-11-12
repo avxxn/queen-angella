@@ -5,7 +5,7 @@ const axios = require('axios');
 const Language = require('../language');
 const Lang = Language.getString('wallpaper');
 
-Asena.addCommand({pattern: 'menu', fromMe: true, desc: Lang.WP}, (async (message, match) => {
+Asena.addCommand({pattern: 'الاوامر', fromMe: true, desc: Lang.WP}, (async (message, match) => {
 
     var r_text = new Array ();
     
@@ -20,45 +20,41 @@ Asena.addCommand({pattern: 'menu', fromMe: true, desc: Lang.WP}, (async (message
     await message.sendMessage(Buffer(respoimage.data), MessageType.image, {mimetype: Mimetype.png, caption: `⛦━━━✨️*QUEEN ANGELLA*✨️━━━⛦
 
 
-𝐇𝐞𝐥𝐥𝐨👋 𝐈 𝐚𝐦 𝐚 QUEEN ANGELLA 𝐛𝐨𝐭.
-            *ANGELLA*
+مرحبا👋 𝐈 𝐚𝐦 𝐚 الامبراطور انوس .
+            *انوس*
 
 ■□■□■□■□■□■□■□■□■□■□
-♕ *𝙈𝙚𝙙𝙞𝙖 𝘾𝙤𝙢𝙢𝙖𝙣𝙙𝙨* ♕
+♕ *اوامر البوت* ♕
 
 👸𝘾𝙤𝙢𝙢𝙖𝙣𝙙➜ -song <text>
-🍙𝙐𝙨𝙚➜ Downloads song for you.
-⚠️.song  baby love
+🍙𝙐𝙨𝙚➜ تحميل الاغاني .
+⚠️.song  اكتب 
 
 👸𝘾𝙤𝙢𝙢𝙖𝙣𝙙➜ -video <yt link>
-🍙𝙐𝙨𝙚➜ Downloads video from YouTube link.
+🍙𝙐𝙨𝙚➜ تحميل الفيديو من رابط يوتيوب.
 
 👸𝘾𝙤𝙢𝙢𝙖𝙣𝙙➜  -insta <link>
-🍙𝙐𝙨𝙚➜   Downloads content from instagram.
+🍙𝙐𝙨𝙚➜   يقوم بتنزيل المحتوى من  instagram.
 
 👸𝘾𝙤𝙢𝙢𝙖𝙣𝙙➜  -yt<text>
-🍙𝙐𝙨𝙚➜   Gives you YT links.
+🍙𝙐𝙨𝙚➜   يمنحك روابط YT.
 
 👸𝘾𝙤𝙢𝙢𝙖𝙣𝙙➜  -show <show name>
-🍙𝙐𝙨𝙚➜   Get info related to tv series and shows.
-
+🍙𝙐𝙨𝙚➜   احصل على معلومات متعلقة بالمسلسلات التلفزيونية والعروض
 👸𝘾𝙤𝙢𝙢𝙖𝙣𝙙➜ -gif 
-🍙𝙐𝙨𝙚➜ Converts video to gif.
+🍙𝙐𝙨𝙚➜ يحول الفيديو إلى gif..
 
 👸𝘾𝙤𝙢𝙢𝙖𝙣𝙙➜ -tomp3 
-🍙𝙐𝙨𝙚➜ Converts video into audio.
-
+🍙𝙐𝙨𝙚➜ يحول الفيديو إلى صوت.
 👸𝘾𝙤𝙢𝙢𝙖𝙣𝙙➜ -say <text>
-🍙𝙐𝙨𝙚➜ Converts text into voice.
+🍙𝙐𝙨𝙚➜ يحول النص إلى صوت..
 
 👸𝘾𝙤𝙢𝙢𝙖𝙣𝙙➜ -img <text>
-🍙𝙐𝙨𝙚➜ It sends image from google.
-
+🍙𝙐𝙨𝙚➜ يرسل صورة من جوجل.
 👸𝘾𝙤𝙢𝙢𝙖𝙣𝙙➜ -trt <language code>
-🍙𝙐𝙨𝙚➜ Translate the text you tag.
-
+🍙𝙐𝙨𝙚➜ ترجم النص الذي قمت بوضع علامة عليه.
 👸𝘾𝙤𝙢𝙢𝙖𝙣𝙙➜ -wiki <text>
-🍙𝙐𝙨𝙚➜ It sends Wikipedia result.
+🍙𝙐𝙨𝙚➜ يرسل نتيجة ويكيبيديا..
 
 👸𝘾𝙤𝙢𝙢𝙖𝙣𝙙➜ -lyric <text>
 🍙𝙐𝙨𝙚➜ Finds the lyrics of the song.
@@ -132,7 +128,7 @@ Asena.addCommand({pattern: 'menu', fromMe: true, desc: Lang.WP}, (async (message
 ♝ *𝙎𝙩𝙞𝙘𝙠𝙚𝙧 𝘾𝙤𝙢𝙢𝙖𝙣𝙙𝙨* ♝
 
 👸𝘾𝙤𝙢𝙢𝙖𝙣𝙙➜ -sticker 
-🍙𝙐𝙨𝙚➜ Converts img/gif into a sticker.
+🍙𝙐𝙨𝙚➜ يحول اي صوره الي ملصق .
 
 👸𝘾𝙤𝙢𝙢𝙖𝙣𝙙➜ -photo 
 🍙𝙐𝙨𝙚➜ Converts sticker into image.
@@ -152,9 +148,9 @@ Asena.addCommand({pattern: 'menu', fromMe: true, desc: Lang.WP}, (async (message
 🍙𝙐𝙨𝙚➜ it will send Whatsapp virus
 
 👸𝘾𝙤𝙢𝙢𝙖𝙣𝙙➜ - List 
-🍙𝙐𝙨𝙚➜ For more commands 
+🍙𝙐𝙨𝙚➜ المزيد من الاوامر 
 ■□■□■□■□■□■□■□■□■□■□
-═════💢ANGELLA💢═════
+═════💢الامبراطور انوس💢═════
 ▣▣▣▣▣▣dripsmemes▣▣▣▣▣▣
 
 `}) 
